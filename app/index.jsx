@@ -4,6 +4,7 @@ import { Link, Stack, useNavigation } from "expo-router";
 export default function Home() {
   const navigation = useNavigation();
 
+
   const hideHeader = () => {
     navigation.setOptions({
       headerShown: false,
@@ -18,6 +19,9 @@ export default function Home() {
     <View style={styles.container}>
       <Stack.Screen options={{ 
         title: 'SENAI', 
+        headerRight: () => (
+          <Button onPress={() => alert("Olá aluno de DS")} title="info" color="red"/>
+        ),
         headerStyle: {
           backgroundColor: 'black',
         },
@@ -43,18 +47,16 @@ const styles = StyleSheet.create({
   titleContainer: {
     justifyContent: "center",
     alignItems: "center",
-    width: 1600,
-    height: 300,
+    width: 414,
+    height: 200,
     backgroundColor: 'black',
     borderWidth: 3,
     borderColor: 'red',
     borderRadius: 8,
-    marginTop: 100,
   },
   title: {
-    fontSize: 80,
+    fontSize: 20,
     fontWeight: "bold",
     color: 'white',
-    
   },
 });
