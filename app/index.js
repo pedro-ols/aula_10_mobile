@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo à tela inicial!</Text>
-      <Link href="/">Ir para Sobre</Link>
+      <Link href="/sobre">Ir para Sobre</Link>
     </View>
   );
 }

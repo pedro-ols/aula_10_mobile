@@ -5,7 +5,7 @@ export default function Sobre() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Esta é a tela Sobre!</Text>
-      <Link href="/sobre">Ir para Tela inicial</Link>
+      <Link href="/">Ir para Tela inicial</Link>
     </View>
   );
 }
